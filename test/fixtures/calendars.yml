@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  minute: 30
+  hour: 15
+  unixtimestamp: 1264480000
+  event_id: 1
+
+two:
+  minute: 20
+  hour: 16
+  day_of_week: 3
+  event_id: 2
+
+# bad
+three:
+  minute: 40
+  hour: 15
+  day_of_week: 3
+  unixtimestamp: 1264480000
+  event_id: 3
+  
+four:
+  minute: 20
+  hour: 16
+  day_of_week: 5
+  event_id: 3
+  
+five:
+  minute: 15
+  hour: 15
+  unixtimestamp: 1263680000
+  event_id: 1

@@ -1,0 +1,9 @@
+div#navigation, div#notice  {
+	padding-bottom: 15px;
+}
+
+div#notice {
+	border: 1px dotted #888888;
+	background-color: #FFFFCC;
+	padding: 5px;
+}

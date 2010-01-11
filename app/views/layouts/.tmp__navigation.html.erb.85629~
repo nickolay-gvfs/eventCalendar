@@ -1,0 +1,9 @@
+	<a href="/calendar">Календарь</a> |
+	
+<% if session[:user_id] %>
+	<a href="/user/logout" onclick="">Выход</a>
+<% else %>
+	<a href="/registration/singlein">Регистрация</a> |
+	<a href="/user/login" onclick="">Вход</a>
+<% end %>
+

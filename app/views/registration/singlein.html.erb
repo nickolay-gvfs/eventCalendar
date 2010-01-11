@@ -1,0 +1,27 @@
+<div class="singleInForm">
+		<%= error_messages_for 'user' %>
+		<% form_for :user do |form| %>
+	    <fieldset>
+	    	<legend>Регистрация</legend>
+			<div>
+				<label for="user_name">Имя/Логин:</label>
+				<%= form.text_field :name %>
+			</div>
+			<div>
+				<label for="user_email">Email:</label>
+				<%= form.text_field :email %>
+			</div>
+			<div>
+				<label for="user_password">Пароль:</label>
+				<%= form.password_field :password %>
+			</div>
+			<div>
+				<label for="user_password_confirmation">Подтверждение пароля:</label>
+				<%= form.password_field :password_confirmation %>
+			</div>
+			<div>
+				<%= submit_tag "Зарегистрироваться" %>
+			</div>
+		</fieldset>
+	<% end %>
+</div>

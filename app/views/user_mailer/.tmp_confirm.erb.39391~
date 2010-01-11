@@ -1,0 +1,8 @@
+Вы успешно зарегистрированны!
+
+Name: <%= @user.name %>
+Password: <%= @password %>
+
+Для активации вам необходимо перейти по следующей ссылке:
+
+/registration/activation/?user_id=<%= @user.id %>&token=<%= @token %>

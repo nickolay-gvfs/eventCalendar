@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: newUser
+  hashed_password: testpassword-one
+  salt: salt-one
+  email: test1@test.test
+
+two:
+  name: veryNewUser
+  hashed_password: testpassword-two
+  salt: salt-two
+  email: test2@test.test

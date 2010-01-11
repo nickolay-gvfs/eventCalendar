@@ -1,0 +1,4 @@
+	<a href="/calendar">Календарь</a> |
+	<a href="/registration/singlein">Регистрация</a> |
+	<a href="/user/login" onclick="alert('Inter'); return false">Вход</a>
+

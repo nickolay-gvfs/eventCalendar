@@ -1,0 +1,27 @@
+<p>
+  <b>Minute:</b>
+  <%=h @calendar.minute %>
+</p>
+
+<p>
+  <b>Hour:</b>
+  <%=h @calendar.hour %>
+</p>
+
+<p>
+  <b>DayOfWeek:</b>
+  <%= (@calendar.unixtimestamp != nil) ? @calendar.unixtimestamp : 'Not defined' %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= (@calendar.unixtimestamp != nil) ? Time.at(@calendar.unixtimestamp).strftime("%Y-%m-%d").to_s : 'Not defined'%>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @calendar.event.title %>
+</p>
+
+<%= link_to 'Edit', edit_calendar_path(@calendar) %> |
+<%= link_to 'Back', calendars_path %>

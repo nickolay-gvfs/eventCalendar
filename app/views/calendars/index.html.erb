@@ -1,0 +1,28 @@
+<h1>Listing calendars</h1>
+
+<table>
+  <tr>
+    <th>Hour</th>
+    <th>Minute</th>
+    <th>DayOfWeek</th>
+	<th>Date</th>
+	<th>Event</th>
+  </tr>
+
+<% @calendars.each do |calendar| %>
+  <tr>
+  	<td><%=h calendar.hour %></td>
+	<td><%=h calendar.minute %></td>
+	<td><%=h calendar.day_of_week %></td>
+	<td><%= (calendar.unixtimestamp != nil) ? Time.at(calendar.unixtimestamp).strftime("%Y-%m-%d").to_s : 'Note'%></td>
+	<td><%= calendar.event.title %></td>
+    <td><%= link_to 'Show', calendar %></td>
+    <td><%= link_to 'Edit', edit_calendar_path(calendar) %></td>
+    <td><%= link_to 'Destroy', calendar, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New calendar', new_calendar_path %>
